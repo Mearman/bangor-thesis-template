@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/Mearman/bangor-thesis-template/compare/v1.1.1...v1.1.2) (2026-09-19)
+
+
+### Bug Fixes
+
+* squash the vendor subtree bump so it needs no merge ancestry ([a2da21d](https://github.com/Mearman/bangor-thesis-template/commit/a2da21d0fc696842f18a619bbf73f5ac596a26f8))
+
 ## [1.1.1](https://github.com/Mearman/bangor-thesis-template/compare/v1.1.0...v1.1.1) (2026-09-19)
 
 
