@@ -1,0 +1,77 @@
+name: Vendor bump test
+
+# Proves the vendor-update bump path end to end on a throwaway branch: sets vendor/VERSION to a deliberately old
+# value, runs the real subtree-pull and compile sequence, and verifies a bump commit landed. The branch is
+# deleted afterwards; main is never touched.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  PACKAGE_REPO: Mearman/bangor
+
+jobs:
+  bump-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          ref: main
+      - name: Create the throwaway branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b vendor-bump-test
+          echo "v0.0.1" > vendor/VERSION
+          git add vendor/VERSION
+          git commit -m "chore(vendor): rewind to v0.0.1 for the bump test"
+          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            HEAD:vendor-bump-test
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: Mearman/actions/.github/actions/setup-texlive@setup-texlive-v1
+      - name: Run the bump sequence
+        run: |
+          git remote add bangor "https://github.com/${PACKAGE_REPO}.git"
+          latest=$(gh api "repos/${PACKAGE_REPO}/releases/latest" --jq .tag_name)
+          echo "bumping to ${latest}"
+          git subtree pull --prefix=vendor bangor "$latest" -m \
+            "chore(vendor): bump bangor to ${latest}"
+          echo "$latest" > vendor/VERSION
+          git add vendor/VERSION
+          latexmk -pdf -interaction=nonstopmode main.tex
+          if grep -E "^!" main.log; then
+            echo "compile failed after the bump"
+            exit 1
+          fi
+          changed=$(git status --porcelain | grep -cv '^.. vendor/')
+          if [ "$changed" -gt 0 ]; then
+            echo "diff escapes vendor/: ${changed} files"
+            exit 1
+          fi
+          git commit -m "chore(vendor): land bump ${latest}" \
+            --allow-empty
+          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            HEAD:vendor-bump-test
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Verify the bump landed
+        run: |
+          latest=$(gh api "repos/${PACKAGE_REPO}/releases/latest" --jq .tag_name)
+          version=$(cat vendor/VERSION)
+          echo "expected ${latest}, vendor/VERSION reads ${version}"
+          [ "$version" = "$latest" ] || exit 1
+          git log --oneline -3
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Clean up the branch
+        if: always()
+        run: |
+          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            ":refs/heads/vendor-bump-test" || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
