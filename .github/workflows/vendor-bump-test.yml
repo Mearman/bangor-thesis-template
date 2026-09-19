@@ -38,10 +38,12 @@ jobs:
           git remote add bangor "https://github.com/${PACKAGE_REPO}.git"
           latest=$(gh api "repos/${PACKAGE_REPO}/releases/latest" --jq .tag_name)
           echo "bumping to ${latest}"
-          git subtree pull --prefix=vendor --squash bangor main -m \
-            "chore(vendor): bump bangor to ${latest}"
+          git fetch bangor main
+          rm -rf vendor
+          mkdir vendor
+          git archive bangor/main | tar -x -C vendor
           echo "$latest" > vendor/VERSION
-          git add vendor/VERSION
+          git add vendor
           latexmk -pdf -interaction=nonstopmode main.tex
           if grep -E "^!" main.log; then
             echo "compile failed after the bump"
