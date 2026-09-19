@@ -1,0 +1,51 @@
+% !TeX program = pdflatex
+%%% Bangor University thesis and dissertation template.
+%%% Replace the metadata below, then write your chapters under
+%%% content/chapters/ and add your sources to references.bib.
+\documentclass[phd,12pt,a4paper]{bangorthesis}
+
+% Citation style: ieee is the default. Any biblatex style name works.
+% Ask your supervisor which style your school requires.
+\bibliographySetup
+\addbibresource{references.bib}
+
+% Document facts. School and college are free text: use the names your school currently publishes, exactly as they should appear.
+\title{Your Thesis Title}
+\author{Your Name}
+\degreeScheme{Doctor of Philosophy}
+\school{School of Computer Science and Engineering}
+\college{College of Science and Engineering}
+\supervisor{Dr First Supervisor}
+\supervisor{Dr Second Supervisor}
+\submissiondate{September 2026}
+
+% Generative AI statement: replace the bracketed guidance with your own statement, checked against your school's current policy. Delete this command to keep the built-in guidance text instead. \aistatement{Describe how you used generative AI tools, or state that you did not use them.}
+
+% Release builds stamp the template version here. Leave this line as
+% it is; the file appears only in tagged releases.
+\InputIfFileExists{version.tex}{}{}
+
+\begin{document}
+
+\maketitle
+\statementspage
+
+\input{content/preliminaries/acknowledgements}
+\begin{abstract}
+% Single spaced, capped at 600 words by the regulation. The class
+% checks the cap and fails the build if the abstract is too long.
+Replace this text with your abstract. State the problem, the method,
+the results, and the conclusion. Write it last, when the rest of the
+document is stable.
+\end{abstract}
+
+\tables
+
+\input{content/chapters/introduction}
+\input{content/chapters/background}
+\input{content/chapters/methods}
+\input{content/chapters/conclusions}
+
+\printbibliography
+
+\end{document}
