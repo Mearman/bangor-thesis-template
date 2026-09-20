@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Mearman/bangor-thesis-template/compare/v1.3.4...v1.4.0) (2026-09-20)
+
+
+### Features
+
+* vendor bangor v2.1.0 and show the new layout options ([4ba08be](https://github.com/Mearman/bangor-thesis-template/commit/4ba08beb3fa88ed9b46b90e022d80e3561649646))
+
 ## [1.3.4](https://github.com/Mearman/bangor-thesis-template/compare/v1.3.3...v1.3.4) (2026-09-20)
 
 
