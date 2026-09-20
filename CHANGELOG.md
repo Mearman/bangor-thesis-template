@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/Mearman/bangor-thesis-template/compare/v1.1.4...v1.2.0) (2026-09-20)
+
+
+### Bug Fixes
+
+* escape the cref-colon and update vendor with cleveref ([62e78a4](https://github.com/Mearman/bangor-thesis-template/commit/62e78a434ab02d11525d7b6f8ec0b2906c8a5277))
+
+
+### Features
+
+* every content type demonstrated with cleveref references ([6014e0a](https://github.com/Mearman/bangor-thesis-template/commit/6014e0a9debf7d8e866992f5b68bf5ecc5470f26))
+
 ## [1.1.4](https://github.com/Mearman/bangor-thesis-template/compare/v1.1.3...v1.1.4) (2026-09-20)
 
 
