@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/Mearman/bangor-thesis-template/compare/v1.1.3...v1.1.4) (2026-09-20)
+
+
+### Bug Fixes
+
+* grep -cv exits nonzero on empty input, killing the step under errexit ([ca79e4b](https://github.com/Mearman/bangor-thesis-template/commit/ca79e4ba9b0c8d7cbcbae2cc164b85f85a9b7a8f))
+
 ## [1.1.3](https://github.com/Mearman/bangor-thesis-template/compare/v1.1.2...v1.1.3) (2026-09-20)
 
 
