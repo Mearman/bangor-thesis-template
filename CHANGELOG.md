@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/Mearman/bangor-thesis-template/compare/v1.3.3...v1.3.4) (2026-09-20)
+
+
+### Bug Fixes
+
+* lightweight abbreviations, compile within free-tier budget ([fbb43d4](https://github.com/Mearman/bangor-thesis-template/commit/fbb43d48cf7e239c1bba7c50889d14345649415a))
+
 ## [1.3.3](https://github.com/Mearman/bangor-thesis-template/compare/v1.3.2...v1.3.3) (2026-09-20)
 
 
