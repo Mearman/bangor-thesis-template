@@ -26,6 +26,13 @@
 % Section continuation markers: asection environment that inserts
 % "(Continued)" when a nested section closes and parent content
 % resumes. Comment this line out if you don't want them.
+% Tables are opt-in: load bangortables here only if your document
+% uses longtable, tabularx, or landscape.
+\usepackage{bangortables}
+% Glossary is also opt-in: remove this line if you don't need a
+% list of abbreviations.
+\usepackage{bangorglossary}
+
 \input{continuation-markers}
 
 % Glossary abbreviations. Add yours here; the list prints in the
