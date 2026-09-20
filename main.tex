@@ -2,43 +2,39 @@
 %%% Bangor University thesis and dissertation template.
 %%% Replace the metadata below, then write your chapters under
 %%% content/chapters/ and add your sources to references.bib.
-\documentclass[phd,12pt,a4paper]{bangorthesis}
+% Layout options besides the degree keyword: pageofm prints "Page N of M", headers=chapter puts the page number in the header instead of the footer, and headrule and footrule each take hairline (the default), visible or none.
+\documentclass[phd,pageofm,12pt,a4paper]{bangorthesis}
 
 % Citation style: ieee is the default. Any biblatex style name works.
 % Ask your supervisor which style your school requires.
-\bibliographySetup
+\bibliographysetup
 \addbibresource{references.bib}
 
 % Document facts. School and college are free text: use the names your school currently publishes, exactly as they should appear.
 \title{Your Thesis Title}
+\shorttitle{Short Thesis Title}
 \author{Your Name}
-\degreeScheme{Doctor of Philosophy}
+\degreescheme{Doctor of Philosophy}
 \school{School of Computer Science and Engineering}
 \college{College of Science and Engineering}
 \supervisor{Dr First Supervisor}
 \supervisor{Dr Second Supervisor}
 \submissiondate{September 2026}
 
-% Generative AI statement: replace the bracketed guidance with your own statement, checked against your school's current policy. Delete this command to keep the built-in guidance text instead. \aistatement{Describe how you used generative AI tools, or state that you did not use them.}
+% Generative AI statement: replace the guidance with your own statement, checked against your school's current policy. Delete this command to keep the built-in guidance text instead.
+\aistatement{Describe how you used generative AI tools, or state that you did not use them.}
 
-% Release builds stamp the template version here. Leave this line as
-% it is; the file appears only in tagged releases.
-% Section continuation markers: asection environment that inserts
-% "(Continued)" when a nested section closes and parent content
-% resumes. Comment this line out if you don't want them.
-% Tables are opt-in: load bangortables here only if your document
-% uses longtable, tabularx, or landscape.
+% Tables and abbreviations are opt-in modules. Load bangortables only if your document uses longtable, tabularx or landscape tables, and bangorglossary only if you want a list of abbreviations.
 \usepackage{bangortables}
-% Glossary is also opt-in: remove this line if you don't need a
-% list of abbreviations.
 \usepackage{bangorglossary}
 
-\input{continuation-markers}
-
-% Glossary abbreviations. Add yours here; the list prints in the
-% front matter via \printabbrevs.
+% Abbreviations. Register yours here: \useabbrev expands each one on first use, and \printabbrevs prints the list in the front matter.
 \addabbrev{SNR}{signal-to-noise ratio}
 
+% Section continuation markers: the asection environment inserts "(Continued)" when a nested section closes and parent content resumes. Remove this line if you do not want them.
+\input{continuation-markers}
+
+% Release builds stamp the template version here. Leave this line as it is; the file appears only in tagged releases.
 \InputIfFileExists{version.tex}{}{}
 
 % Code listings for the demo in the methods chapter. Adjust the style
