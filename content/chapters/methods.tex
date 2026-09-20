@@ -1,3 +1,18 @@
 \chapter{Methods}
-Describe how the research was conducted. The regulation requires a
-description of the methods used.
+Describe how the research was conducted. \Cref{eq:signal-to-noise} shows the shape of a formula; the amsmath package is loaded by the class.
+
+\begin{equation}
+  \label{eq:signal-to-noise}
+  \mathrm{SNR} = \frac{\mu_{\mathrm{signal}}}{\sigma_{\mathrm{noise}}}
+\end{equation}
+
+\Cref{lst:command} shows how to include a code listing with syntax highlighting, using the listings package.
+
+\begin{lstlisting}[caption={A sample shell command.},label={lst:command},language=bash]
+#!/bin/sh
+for subject in $(ls subjects); do
+  process "$subject" --output "results/$subject.dat"
+done
+\end{lstlisting}
+
+The regulation requires a description of the methods used, so this chapter is not optional for a research degree.

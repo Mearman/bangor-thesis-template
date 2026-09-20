@@ -1,8 +1,5 @@
 \chapter{Introduction}
-This chapter states the problem, the contribution, and the structure
-of the document. Figure~\ref{fig:crest} shows the university crest
-through the brand layer, and Table~\ref{tab:sizes} shows a sample
-table. Cite one source~\autocite{knuth1984}.
+This chapter states the problem, the contribution, and the structure of the document. It demonstrates every content type the template supports, so you can see the syntax for each. Reference content by label alone with \cref: \cref{fig:crest} shows the crest through the brand layer, \cref{tab:regulation} a sample table, \cref{eq:signal-to-noise} a formula, and \cref{lst:command} a code listing.
 
 \begin{figure}[htbp]
   \centering
@@ -14,13 +11,14 @@ table. Cite one source~\autocite{knuth1984}.
 \begin{table}[htbp]
   \centering
   \caption{A sample table.}
-  \label{tab:sizes}
+  \label{tab:regulation}
   \begin{tabular}{lr}
     \hline
-    Item & Value \\
+    Requirement & Value \\
     \hline
-    Regulation body size floor & 12pt serif \\
-    Regulation line spacing & 1.5 \\
+    Binding edge & 2.5\,cm \\
+    Line spacing & 1.5 \\
+    Abstract cap & 600 words \\
     \hline
   \end{tabular}
 \end{table}
