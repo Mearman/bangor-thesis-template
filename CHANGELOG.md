@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/Mearman/bangor-thesis-template/compare/v1.2.1...v1.3.0) (2026-09-20)
+
+
+### Bug Fixes
+
+* longtable row terminators, British spelling word pairs ([8402dab](https://github.com/Mearman/bangor-thesis-template/commit/8402dabacc4cab0fb538f86f76bef7430ec7fb95))
+
+
+### Features
+
+* xltabular, glossary, continuation markers, running headers ([2598843](https://github.com/Mearman/bangor-thesis-template/commit/259884392fd4a93020e1d5ba76b8b956b60c5246))
+
 ## [1.2.1](https://github.com/Mearman/bangor-thesis-template/compare/v1.2.0...v1.2.1) (2026-09-20)
 
 
