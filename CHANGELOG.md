@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Mearman/bangor-thesis-template/compare/v1.2.0...v1.2.1) (2026-09-20)
+
+
+### Bug Fixes
+
+* drop capitalise so cref and Cref differ, convention documented ([25fb605](https://github.com/Mearman/bangor-thesis-template/commit/25fb605f21310cd56b6393ac402ceae198ed2a48))
+
 # [1.2.0](https://github.com/Mearman/bangor-thesis-template/compare/v1.1.4...v1.2.0) (2026-09-20)
 
 
