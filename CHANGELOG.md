@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/Mearman/bangor-thesis-template/compare/v1.3.1...v1.3.2) (2026-09-20)
+
+
+### Bug Fixes
+
+* spelling check excludes preamble config files, not backslash patterns ([2e40be7](https://github.com/Mearman/bangor-thesis-template/commit/2e40be77d731b6839e10e5f21799a2f9b3129de8))
+
 ## [1.3.1](https://github.com/Mearman/bangor-thesis-template/compare/v1.3.0...v1.3.1) (2026-09-20)
 
 
