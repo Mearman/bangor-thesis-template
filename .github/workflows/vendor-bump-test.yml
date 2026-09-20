@@ -38,7 +38,7 @@ jobs:
           git remote add bangor "https://github.com/${PACKAGE_REPO}.git"
           latest=$(gh api "repos/${PACKAGE_REPO}/releases/latest" --jq .tag_name)
           echo "bumping to ${latest}"
-          git fetch bangor main
+          git fetch --no-tags bangor main
           rm -rf vendor
           mkdir vendor
           git archive bangor/main | tar -x -C vendor
