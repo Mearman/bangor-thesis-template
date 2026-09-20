@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/Mearman/bangor-thesis-template/compare/v1.3.0...v1.3.1) (2026-09-20)
+
+
+### Bug Fixes
+
+* endfirsthead for single-pass labels, spelling check skips LaTeX commands ([852c6ca](https://github.com/Mearman/bangor-thesis-template/commit/852c6ca9fa51ccc81bea12cac4513afc9ae3bf1e))
+* endfirsthead labels, spelling check excludes, no-tags fetch ([1b55e9b](https://github.com/Mearman/bangor-thesis-template/commit/1b55e9ba78af2e90790d06d3a5d5c611091fd67d))
+
 # [1.3.0](https://github.com/Mearman/bangor-thesis-template/compare/v1.2.1...v1.3.0) (2026-09-20)
 
 
