@@ -23,6 +23,15 @@
 
 % Release builds stamp the template version here. Leave this line as
 % it is; the file appears only in tagged releases.
+% Section continuation markers: asection environment that inserts
+% "(Continued)" when a nested section closes and parent content
+% resumes. Comment this line out if you don't want them.
+\input{continuation-markers}
+
+% Glossary abbreviations. Add yours here; the list prints in the
+% front matter via \printnoidxglossary[type=acronym].
+\addabbrev{SNR}{signal-to-noise ratio}
+
 \InputIfFileExists{version.tex}{}{}
 
 % Code listings for the demo in the methods chapter. Adjust the style
@@ -51,6 +60,7 @@ document is stable.
 \end{abstract}
 
 \tables
+\printnoidxglossary[type=acronym]
 
 \input{content/chapters/introduction}
 \input{content/chapters/background}
