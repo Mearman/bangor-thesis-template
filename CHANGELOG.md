@@ -1,3 +1,21 @@
+# [1.5.0](https://github.com/Mearman/bangor-thesis-template/compare/v1.4.0...v1.5.0) (2026-09-20)
+
+
+### Bug Fixes
+
+* apply the vendor update when the manual run is not a dry run ([e1f7df2](https://github.com/Mearman/bangor-thesis-template/commit/e1f7df2537bfb86853fce5598425b55dc1837684))
+
+
+### Features
+
+* vendor bangor v2.2.0 and demonstrate appendices ([3c8c2ea](https://github.com/Mearman/bangor-thesis-template/commit/3c8c2eab1f780e1fe2547094d292f53e7a83e5e3))
+
+
+Open this exact version in Overleaf, or download it:
+
+[![Open in Overleaf](https://img.shields.io/badge/Open_in_Overleaf-44A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://www.overleaf.com/docs?snip_uri=https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v1.5.0.zip)
+[![Download ZIP](https://img.shields.io/badge/Download_ZIP-ED0000?style=for-the-badge&labelColor=231F20)](https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v1.5.0.zip)
+
 # [1.4.0](https://github.com/Mearman/bangor-thesis-template/compare/v1.3.4...v1.4.0) (2026-09-20)
 
 
