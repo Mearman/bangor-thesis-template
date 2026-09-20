@@ -49,7 +49,7 @@ jobs:
             echo "compile failed after the bump"
             exit 1
           fi
-          changed=$(git status --porcelain | grep -cv '^.. vendor/')
+          changed=$(git status --porcelain | grep -cv '^.. vendor/' || true)
           if [ "$changed" -gt 0 ]; then
             echo "diff escapes vendor/: ${changed} files"
             exit 1
