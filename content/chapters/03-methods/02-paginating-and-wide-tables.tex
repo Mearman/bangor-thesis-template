@@ -1,7 +1,7 @@
-\section{Paginating and wide tables}
-\Cref{tab:paginate} uses the longtable environment, which paginates automatically at row boundaries. Use tabularx for width-targeted tables and landscape for wide ones. The header repeats on each continuation page.
+\section{Long and wide tables}
+\Cref{tab:paginate} uses the longtabular environment, one environment for tables that run past a page, need X columns to fit the width, or both. It paginates at row boundaries, the header repeats on each continuation page, and the X column is sized to the text width.
 
-\begin{longtable}{l p{8cm} r}
+\begin{longtabular}{l X r}
 \caption{A paginating table.}\label{tab:paginate}\\
 \hline
 Item & Description & Value \\
@@ -35,20 +35,31 @@ Phi & Twenty-first letter & 21 \\
 Chi & Twenty-second letter & 22 \\
 Psi & Twenty-third letter & 23 \\
 Omega & Twenty-fourth letter & 24 \\
-\end{longtable}
+Run 25 & Twenty-fifth measurement & 25 \\
+Run 26 & Twenty-sixth measurement & 26 \\
+Run 27 & Twenty-seventh measurement & 27 \\
+Run 28 & Twenty-eighth measurement & 28 \\
+Run 29 & Twenty-ninth measurement & 29 \\
+Run 30 & Thirtieth measurement & 30 \\
+Run 31 & Thirty-first measurement & 31 \\
+Run 32 & Thirty-second measurement & 32 \\
+Run 33 & Thirty-third measurement & 33 \\
+Run 34 & Thirty-fourth measurement & 34 \\
+Run 35 & Thirty-fifth measurement & 35 \\
+Run 36 & Thirty-sixth measurement & 36 \\
+Run 37 & Thirty-seventh measurement & 37 \\
+Run 38 & Thirty-eighth measurement & 38 \\
+Run 39 & Thirty-ninth measurement & 39 \\
+Run 40 & Fortieth measurement & 40 \\
+\end{longtabular}
 
-For wide tables that need landscape, wrap in the landscape environment as \cref{tab:wide} demonstrates.
+For a table too wide even for the full text width, the optional argument rotates it onto landscape pages, as \cref{tab:wide} demonstrates.
 
-\begin{landscape}
-\begin{table}[p]
-\centering
-\caption{A wide table in landscape.}\label{tab:wide}
-\begin{tabularx}{\linewidth}{l l l l X X}
+\begin{longtabular}[wide]{l l l l X X}
+\caption{A wide table in landscape.}\label{tab:wide}\\
 \hline
 A & B & C & D & Long E & Long F \\
 \hline
 Data & Data & Data & Data & Description & More \\
 \hline
-\end{tabularx}
-\end{table}
-\end{landscape}
+\end{longtabular}
