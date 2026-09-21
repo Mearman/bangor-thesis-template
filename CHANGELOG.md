@@ -1,3 +1,19 @@
+## [1.6.2](https://github.com/Mearman/bangor-thesis-template/compare/v1.6.1...v1.6.2) (2026-09-21)
+
+### Bug Fixes
+
+* colour listing keywords instead of setting them in bold ([db9ea2a](https://github.com/Mearman/bangor-thesis-template/commit/db9ea2a8d7d560a892100724c63e5debf5a4730b))
+
+### Continuous Integration
+
+* stop the spelling check flagging LaTeX macro names ([e73850b](https://github.com/Mearman/bangor-thesis-template/commit/e73850b016da0e6756de1bf64e814021be4bbbaa))
+
+
+Open this exact version in Overleaf, or download it:
+
+[![Open in Overleaf](https://img.shields.io/badge/Open_in_Overleaf-44A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://www.overleaf.com/docs?snip_uri=https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v1.6.2.zip)
+[![Download ZIP](https://img.shields.io/badge/Download_ZIP-ED0000?style=for-the-badge&labelColor=231F20)](https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v1.6.2.zip)
+
 ## [1.6.1](https://github.com/Mearman/bangor-thesis-template/compare/v1.6.0...v1.6.1) (2026-09-21)
 
 ### Continuous Integration
