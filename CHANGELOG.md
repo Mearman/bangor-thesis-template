@@ -1,3 +1,19 @@
+## [1.6.5](https://github.com/Mearman/bangor-thesis-template/compare/v1.6.4...v1.6.5) (2026-09-21)
+
+### Bug Fixes
+
+* archive the release tag so the vendor stamp matches the content ([15f9b51](https://github.com/Mearman/bangor-thesis-template/commit/15f9b51416260e2562ec2821314896ea0f22d2cc))
+
+### Documentation
+
+* demonstrate captiondesc on the crest figure ([e75068d](https://github.com/Mearman/bangor-thesis-template/commit/e75068d128df10f7d28b36d23930b7124cfc34c0))
+
+
+Open this exact version in Overleaf, or download it:
+
+[![Open in Overleaf](https://img.shields.io/badge/Open_in_Overleaf-44A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://www.overleaf.com/docs?snip_uri=https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v1.6.5.zip)
+[![Download ZIP](https://img.shields.io/badge/Download_ZIP-ED0000?style=for-the-badge&labelColor=231F20)](https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v1.6.5.zip)
+
 ## [1.6.4](https://github.com/Mearman/bangor-thesis-template/compare/v1.6.3...v1.6.4) (2026-09-21)
 
 ### Miscellaneous Chores
