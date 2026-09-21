@@ -41,7 +41,8 @@
 % Code listings for the demo in the methods chapter. Adjust the style
 % here; see the listings package documentation for the full option set.
 \usepackage{listings}
-\lstset{basicstyle=\ttfamily\small, breaklines=true, frame=single}
+% Keywords take the brand red instead of the listings default of bold, because the typewriter font has no bold shape.
+\lstset{basicstyle=\ttfamily\small, keywordstyle=\color{bangorred}, breaklines=true, frame=single}
 
 % Cross-references use cleveref: \cref{label} mid-sentence produces a
 % lowercase type name ("see figure 1"), \Cref{label} at a sentence
