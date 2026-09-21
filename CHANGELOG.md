@@ -1,3 +1,22 @@
+## [1.6.1](https://github.com/Mearman/bangor-thesis-template/compare/v1.6.0...v1.6.1) (2026-09-21)
+
+### Continuous Integration
+
+* apply the header length limit in the commit-msg hook ([603001c](https://github.com/Mearman/bangor-thesis-template/commit/603001caf24b8e6207d2893d6b76f6144b9ea742))
+* push release and vendor commits with a deploy key ([a0c0654](https://github.com/Mearman/bangor-thesis-template/commit/a0c0654a7c1abfb938f3a86398ef96c6103bb40f))
+* release every conventional commit type and list each in the notes ([62128c7](https://github.com/Mearman/bangor-thesis-template/commit/62128c7cec5ba4156494bf1651d0d39f0bfea481))
+
+### Miscellaneous Chores
+
+* **vendor:** land bump v5.0.0 ([b7cd6ba](https://github.com/Mearman/bangor-thesis-template/commit/b7cd6ba19ac6043988075442d8d1181bc3971cfc))
+* **vendor:** land bump v5.0.2 ([9aaa244](https://github.com/Mearman/bangor-thesis-template/commit/9aaa24407e98da21c8d11eb811142786ea2ef504))
+
+
+Open this exact version in Overleaf, or download it:
+
+[![Open in Overleaf](https://img.shields.io/badge/Open_in_Overleaf-44A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://www.overleaf.com/docs?snip_uri=https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v1.6.1.zip)
+[![Download ZIP](https://img.shields.io/badge/Download_ZIP-ED0000?style=for-the-badge&labelColor=231F20)](https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v1.6.1.zip)
+
 # [1.6.0](https://github.com/Mearman/bangor-thesis-template/compare/v1.5.0...v1.6.0) (2026-09-21)
 
 
