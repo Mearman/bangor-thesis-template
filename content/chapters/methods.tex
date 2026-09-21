@@ -8,6 +8,9 @@ Describe how the research was conducted. \Cref{eq:signal-to-noise} shows the sha
 
 The abbreviation for this ratio is registered once in \texttt{main.tex}. Its first use expands it, as in \useabbrev{SNR}, and later uses are short: \useabbrev{SNR}. Start a sentence with \texttt{\textbackslash Useabbrev} to capitalise the expansion.
 
+The regulation requires a description of the methods used, so this chapter is not optional for a research degree.
+
+\section{Code listings}
 \Cref{lst:command} shows how to include a code listing with syntax highlighting, using the listings package.
 
 \begin{lstlisting}[caption={A sample shell command.},label={lst:command},language=bash]
@@ -16,8 +19,6 @@ for subject in $(ls subjects); do
   process "$subject" --output "results/$subject.dat"
 done
 \end{lstlisting}
-
-The regulation requires a description of the methods used, so this chapter is not optional for a research degree.
 
 \section{Paginating and wide tables}
 \Cref{tab:paginate} uses the longtable environment, which paginates automatically at row boundaries. Use tabularx for width-targeted tables and landscape for wide ones. The header repeats on each continuation page.
