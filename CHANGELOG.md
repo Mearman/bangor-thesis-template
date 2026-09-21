@@ -1,3 +1,16 @@
+# [1.6.0](https://github.com/Mearman/bangor-thesis-template/compare/v1.5.0...v1.6.0) (2026-09-21)
+
+
+### Features
+
+* give each chapter and appendix a numbered folder with a file per section ([5192904](https://github.com/Mearman/bangor-thesis-template/commit/51929044be420f54f10de7d79b46f55507ec7553))
+
+
+Open this exact version in Overleaf, or download it:
+
+[![Open in Overleaf](https://img.shields.io/badge/Open_in_Overleaf-44A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://www.overleaf.com/docs?snip_uri=https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v1.6.0.zip)
+[![Download ZIP](https://img.shields.io/badge/Download_ZIP-ED0000?style=for-the-badge&labelColor=231F20)](https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v1.6.0.zip)
+
 # [1.5.0](https://github.com/Mearman/bangor-thesis-template/compare/v1.4.0...v1.5.0) (2026-09-20)
 
 
