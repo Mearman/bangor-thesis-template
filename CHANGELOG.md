@@ -1,3 +1,15 @@
+## [1.6.9](https://github.com/Mearman/bangor-thesis-template/compare/v1.6.8...v1.6.9) (2026-09-21)
+
+### Miscellaneous Chores
+
+* **vendor:** land bump v5.3.0 ([953206c](https://github.com/Mearman/bangor-thesis-template/commit/953206c7ca4b375041d77518fff38bdf9e6223d4))
+
+
+Open this exact version in Overleaf, or download it:
+
+[![Open in Overleaf](https://img.shields.io/badge/Open_in_Overleaf-44A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://www.overleaf.com/docs?snip_uri=https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v1.6.9.zip)
+[![Download ZIP](https://img.shields.io/badge/Download_ZIP-ED0000?style=for-the-badge&labelColor=231F20)](https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v1.6.9.zip)
+
 ## [1.6.8](https://github.com/Mearman/bangor-thesis-template/compare/v1.6.7...v1.6.8) (2026-09-21)
 
 ### Documentation
