@@ -1,7 +1,7 @@
 \section{Long and wide tables}
-\Cref{tab:paginate} uses the longtabular environment, one environment for tables that run past a page, need X columns to fit the width, or both. It paginates at row boundaries, the header repeats on each continuation page, and the X column is sized to the text width.
+\Cref{tab:paginate} is simply long: ordinary fixed columns, a natural width narrower than the text, and more rows than fit on a page. The longtabular environment paginates at row boundaries, and the header set before \texttt{\textbackslash endhead} repeats on each continuation page.
 
-\begin{longtabular}{l X r}
+\begin{longtabular}{l p{5cm} r}
 \caption{A paginating table.}\label{tab:paginate}\\
 \hline
 Item & Description & Value \\
@@ -53,7 +53,7 @@ Run 39 & Thirty-ninth measurement & 39 \\
 Run 40 & Fortieth measurement & 40 \\
 \end{longtabular}
 
-For a table too wide even for the full text width, the optional argument rotates it onto landscape pages, as \cref{tab:wide} demonstrates.
+Width is handled in the same environment, separately from length. X columns size a table to the text width, and for a table too wide even for that, the optional argument rotates it onto landscape pages, as \cref{tab:wide} demonstrates; both combine when a wide table also runs past a page.
 
 \begin{longtabular}[wide]{l l l l X X}
 \caption{A wide table in landscape.}\label{tab:wide}\\
