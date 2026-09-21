@@ -1,7 +1,8 @@
 % !TeX program = pdflatex
 %%% Bangor University thesis and dissertation template.
 %%% Replace the metadata below, then write your chapters under
-%%% content/chapters/ and add your sources to references.bib.
+%%% content/chapters/, one numbered folder per chapter with an index.tex
+%%% and a file per section, and add your sources to references.bib.
 % Layout options besides the degree keyword. These are on by default and each takes false to turn it off, except sectionfloats, which takes none: pageofm prints "Page N of M", appendixpages numbers each appendix separately as "Appendix A - Page n of m", sharedfloats puts figures, tables and listings on one counter, and sectionfloats numbers floats within their section (sectionfloats=zero numbers a float before the first section of a chapter as 5.0.1 instead of 5.1). headers=chapter puts the page number in the header instead of the footer, and headrule and footrule each take hairline (the default), visible or none.
 \documentclass[phd,12pt,a4paper]{bangorthesis}
 
@@ -65,15 +66,15 @@ document is stable.
 \tables
 \printabbrevs
 
-\input{content/chapters/introduction}
-\input{content/chapters/background}
-\input{content/chapters/methods}
-\input{content/chapters/conclusions}
+\input{content/chapters/01-introduction/index}
+\input{content/chapters/02-background/index}
+\input{content/chapters/03-methods/index}
+\input{content/chapters/04-conclusions/index}
 
 \printbibliography
 
 % Appendices follow the bibliography. \appendix letters the chapters that come after it.
 \appendix
-\input{content/appendices/supplementary}
+\input{content/appendices/01-supplementary/index}
 
 \end{document}

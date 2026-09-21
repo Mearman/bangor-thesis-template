@@ -1,0 +1,9 @@
+\section{Code listings}
+\Cref{lst:command} shows how to include a code listing with syntax highlighting, using the listings package.
+
+\begin{lstlisting}[caption={A sample shell command.},label={lst:command},language=bash]
+#!/bin/sh
+for subject in $(ls subjects); do
+  process "$subject" --output "results/$subject.dat"
+done
+\end{lstlisting}

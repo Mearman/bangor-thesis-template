@@ -14,7 +14,7 @@ If you use git on your own machine, clone your copy instead and run `latexmk -pd
 
 ## Write your document
 
-Set your facts in `main.tex`: title, author, degree scheme, school, college, supervisors, and date. School and college are free text: use the names your school publishes today. Write your chapters under `content/chapters/` and your sources in `references.bib`.
+Set your facts in `main.tex`: title, author, degree scheme, school, college, supervisors, and date. School and college are free text: use the names your school publishes today. Write your chapters under `content/chapters/`, one numbered folder per chapter. The `index.tex` in each folder holds the `\chapter` line and the text before the first section, and then inputs one file per section, numbered in order, each starting with its `\section`. `main.tex` inputs each chapter's `index`, so adding a chapter is a new folder and one line there, and adding a section is a new file and one line in that chapter's `index.tex`. Appendices follow the same layout under `content/appendices/`. Keep your sources in `references.bib`.
 
 Pick your degree option on the `\documentclass` line. Research degrees such as `phd`, `mphil`, and `mres` set the title page to say *thesis*. Taught options such as `msc`, `bsc`, and `beng` set it to say *dissertation*. The options `thesis` and `dissertation` override the wording directly.
 
