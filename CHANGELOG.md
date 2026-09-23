@@ -1,3 +1,15 @@
+## [1.6.16](https://github.com/Mearman/bangor-thesis-template/compare/v1.6.15...v1.6.16) (2026-09-23)
+
+### Documentation
+
+* add a download-and-compile quick start for local TeX systems ([c2e2578](https://github.com/Mearman/bangor-thesis-template/commit/c2e257869930042753207401b2801557cfa1fa54))
+
+
+Open this exact version in Overleaf, or download it:
+
+[![Open in Overleaf](https://img.shields.io/badge/Open_in_Overleaf-44A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://www.overleaf.com/docs?snip_uri=https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v1.6.16.zip)
+[![Download ZIP](https://img.shields.io/badge/Download_ZIP-ED0000?style=for-the-badge&labelColor=231F20)](https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v1.6.16.zip)
+
 ## [1.6.15](https://github.com/Mearman/bangor-thesis-template/compare/v1.6.14...v1.6.15) (2026-09-21)
 
 ### Miscellaneous Chores
