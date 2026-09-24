@@ -1,3 +1,21 @@
+## [2.0.0](https://github.com/Mearman/bangor-thesis-template/compare/v1.6.16...v2.0.0) (2026-09-24)
+
+### ⚠ BREAKING CHANGES
+
+* main.tex loads the bangor class and the vendor directory holds bangor.cls instead of
+the separate module files. Projects copied from this template must change their document class line
+and replace their vendor directory.
+
+### Features
+
+* use the single bangor class ([6de34ab](https://github.com/Mearman/bangor-thesis-template/commit/6de34ab788d4aed20ad86d8941c63367f6228c6d))
+
+
+Open this exact version in Overleaf, or download it:
+
+[![Open in Overleaf](https://img.shields.io/badge/Open_in_Overleaf-44A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://www.overleaf.com/docs?snip_uri=https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v2.0.0.zip)
+[![Download ZIP](https://img.shields.io/badge/Download_ZIP-ED0000?style=for-the-badge&labelColor=231F20)](https://github.com/Mearman/bangor-thesis-template/archive/refs/tags/v2.0.0.zip)
+
 ## [1.6.16](https://github.com/Mearman/bangor-thesis-template/compare/v1.6.15...v1.6.16) (2026-09-23)
 
 ### Documentation
