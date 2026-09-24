@@ -4,7 +4,7 @@
 %%% content/chapters/, one numbered folder per chapter with an index.tex
 %%% and a file per section, and add your sources to references.bib.
 % Layout options besides the degree keyword. These are on by default and each takes false to turn it off, except sectionfloats, which takes none: pageofm prints "Page N of M", appendixpages numbers each appendix separately as "Appendix A - Page n of m", sharedfloats puts figures, tables and listings on one counter, and sectionfloats numbers floats within their section (sectionfloats=zero numbers a float before the first section of a chapter as 5.0.1 instead of 5.1). headers=chapter puts the page number in the header instead of the footer, and headrule and footrule each take hairline (the default), visible or none.
-\documentclass[phd,12pt,a4paper]{bangorthesis}
+\documentclass[phd,tables,glossary,12pt,a4paper]{bangor}
 
 % Citation style: ieee is the default. Any biblatex style name works.
 % Ask your supervisor which style your school requires.
@@ -25,9 +25,7 @@
 % Generative AI statement: replace the guidance with your own statement, checked against your school's current policy. Delete this command to keep the built-in guidance text instead.
 \aistatement{Describe how you used generative AI tools, or state that you did not use them.}
 
-% Tables and abbreviations are opt-in modules. Load bangortables only if your document uses longtable, tabularx or landscape tables, and bangorglossary only if you want a list of abbreviations.
-\usepackage{bangortables}
-\usepackage{bangorglossary}
+% The tables and glossary class options on the \documentclass line switch on the longtabular environment (for longtable, tabularx or landscape tables) and the list of abbreviations. Remove an option if your document does not use it.
 
 % Abbreviations. Register yours here: \useabbrev expands each one on first use, and \printabbrevs prints the list in the front matter. The list heading defaults to "List of Abbreviations"; pass another title as \printabbrevs[Glossary] to change it.
 \addabbrev{SNR}{signal-to-noise ratio}
