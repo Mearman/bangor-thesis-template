@@ -38,11 +38,16 @@ jobs:
           git remote add bangor "https://github.com/${PACKAGE_REPO}.git"
           latest=$(gh api "repos/${PACKAGE_REPO}/releases/latest" --jq .tag_name)
           echo "bumping to ${latest}"
-          git fetch --no-tags bangor main
+          git fetch --no-tags bangor "refs/tags/${latest}"
           rm -rf vendor
           mkdir vendor
-          git archive bangor/main | tar -x -C vendor
+          git archive FETCH_HEAD -- bangor.cls bangor-crest-colour.pdf LICENSE README.md | tar -x -C vendor
           echo "$latest" > vendor/VERSION
+          stamped=$(grep -m1 -oE 'v[0-9]+\.[0-9]+\.[0-9]+' vendor/bangor.cls || true)
+          if [ "$stamped" != "$latest" ]; then
+            echo "archived package is ${stamped:-unversioned} but the release says ${latest}"
+            exit 1
+          fi
           git add vendor
           latexmk -pdf -interaction=nonstopmode main.tex
           if grep -E "^!" main.log; then
